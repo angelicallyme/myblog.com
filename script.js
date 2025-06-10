@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     // minimizar, maximizar e fechar janelas
     const windowControls = document.querySelectorAll('.window-controls .control');
@@ -39,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
             newTask.className = 'todo-item';
             newTask.innerHTML = `
                 <input type="checkbox" id="${taskId}">
-                <label for="${taskId}" contenteditable="true">Nova tarefa</label>
+                <label for="${taskId}" contenteditable="true">nova tarefa</label>
             `;
             todoList.appendChild(newTask);
             
@@ -105,11 +104,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 newEntry.className = 'guestbook-entry';
                 newEntry.innerHTML = `
                     <div class="entry-avatar">
-                        <img src="https://placehold.co/40x40/ffb6c1/fff?text=♡" alt="Avatar">
+                        <img src="https://placehold.co/40x40/ffb6c1/fff?text=♡" alt="avatar">
                     </div>
                     <div class="entry-content">
                         <div class="entry-info">
-                            <span class="entry-author">Visitante</span>
+                            <span class="entry-author">anônimo</span>
                             <span class="entry-date">${formattedDate}</span>
                         </div>
                         <div class="entry-message">
@@ -142,12 +141,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (monthButtons.length && currentMonth) {
         const months = [
-            'Janeiro', 'Fevereiro', 'Março', 'Abril', 
-            'Maio', 'Junho', 'Julho', 'Agosto', 
-            'Setembro', 'Outubro', 'Novembro', 'Dezembro'
+            'janeiro', 'fevereiro', 'março', 'abril', 
+            'maio', 'junho', 'julho', 'agosto', 
+            'setembro', 'outubro', 'novembro', 'dezembro'
         ];
         
-        let currentMonthIndex = months.indexOf('Maio');
+        let currentMonthIndex = months.indexOf('junho');
         let currentYear = 2025;
         
         monthButtons.forEach((button, index) => {
